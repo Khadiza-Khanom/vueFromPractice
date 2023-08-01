@@ -8,8 +8,15 @@ const checkValue= ref(true)
     <h1 class="text-2xl mb-10">Vue Form</h1>
     <p class="mb-10"></p>
     <label for="">Display Random Image</label>
-    <input class="ml-2" type="checkbox"  v-model="checkValue" />
+ <p class="mt-5">
+      <input type="radio" name="display" v-model="checkValue" :value="true"> On <br/>
 
+
+      <input type="radio" name="display" v-model="checkValue" :value="false"> Off <br/>
+    </p>
+  
+      
+   
     <img
     v-show="checkValue"
       class="mt-10 mx-auto w-[500px]"
